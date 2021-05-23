@@ -11,7 +11,7 @@ namespace Entities {
         public double Totalvalue { get; set; }
         public List<Installment> Installments { get; set; }
     //------------------------------- CONST -------------------------------//
-        public Contract(int number, DateTime date, double totalvalue, List<Installment> installments) {
+        public Contract(int number, DateTime date, double totalvalue) {
             Number = number;
             Date = date;
             Totalvalue = totalvalue;
@@ -20,7 +20,6 @@ namespace Entities {
     //------------------------------- MET -------------------------------//
         public void AddInstallment(Installment installment) {
             Installments.Add(installment);
-
         }
     }
     //-------------------------------- END -------------------------------//
